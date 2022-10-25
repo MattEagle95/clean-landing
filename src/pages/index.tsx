@@ -6,12 +6,7 @@ import { config } from '../config/config';
 
 export default function Index() {
   return (
-    <Main
-      justifyContent={'center'}
-      alignItems={'center'}
-      textAlign={'center'}
-      spacing={4}
-    >
+    <Main>
       <Stack>
         <Heading fontSize={'6xl'}>{config.app.name}</Heading>
         {config.app.description && <Text>{config.app.description}</Text>}
