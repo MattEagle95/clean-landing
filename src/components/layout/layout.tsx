@@ -10,7 +10,9 @@ export const Layout = ({ children }: PropsWithChildren) => (
   <Box className={'min-h-screen flex flex-col'}>
     <Banner />
     <Header />
-    <ErrorBoundary>{children}</ErrorBoundary>
+    <Box className={'flex flex-grow'}>
+      <ErrorBoundary>{children}</ErrorBoundary>
+    </Box>
     <Footer />
   </Box>
 );

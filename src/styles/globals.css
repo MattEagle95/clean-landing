@@ -6,32 +6,4 @@
   html {
     font-family: 'InterVariable', sans-serif;
   }
-
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: theme('colors.dark.DEFAULT') theme('colors.dark.light');
-  }
-
-  *::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: theme('colors.dark.light');
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: theme('colors.dark.DEFAULT');
-    border-radius: 10px;
-    border: 1px solid theme('colors.black');
-  }
-
-  *::-webkit-scrollbar-thumb:hover {
-    background-color: theme('colors.light.DEFAULT');
-  }
-
-  ::selection {
-    color: theme('colors.primary.text');
-    background: theme('colors.primary.DEFAULT');
-  }
 }

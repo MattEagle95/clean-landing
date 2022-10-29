@@ -1,6 +1,10 @@
+import { Warning } from 'phosphor-react';
 import React, { Component, ErrorInfo, ReactNode } from 'react';
 
+import { config } from '../../config/config';
 import { Alert, AlertProps } from './alert';
+import { Box } from './box';
+import { Text } from './text';
 
 interface Props {
   statusAlertProps?: AlertProps;
@@ -28,7 +32,25 @@ class ErrorBoundary extends Component<Props, State> {
 
   public render() {
     if (this.state.hasError) {
-      return <Alert>{this.state.message}</Alert>;
+      return (
+        <Box
+          className={'flex flex-grow justify-center items-center text-center'}
+        >
+          <Box
+            className={
+              'flex flex-col flex-grow justify-center items-center text-center'
+            }
+          >
+            <Warning size={42} />
+
+            {this.state.message && (
+              <Text className={'text-neutral-600 dark:text-neutral-400'}>
+                {this.state.message}
+              </Text>
+            )}
+          </Box>
+        </Box>
+      );
     }
 
     return this.props.children;
