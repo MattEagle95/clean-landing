@@ -13,7 +13,6 @@ import { twMerge } from 'tailwind-merge';
 import { UIColor, UISize, UIVariant } from '../../types/types';
 import { Box } from './box';
 import { Button } from './button';
-import Tooltip from './tooltip';
 
 export type AlertProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
