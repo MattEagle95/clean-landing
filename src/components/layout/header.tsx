@@ -1,4 +1,3 @@
-import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
 
 import { config } from '../../config/config';
@@ -6,11 +5,8 @@ import { Container } from '../ui/container';
 import { Nav } from '../ui/nav';
 import { NavMenu } from '../ui/nav-menu';
 import { ThemeButton } from '../ui/theme-button';
-import Tooltip from '../ui/tooltip';
 
 export function Header() {
-  const { t } = useTranslation();
-
   return (
     <header className={'py-2'}>
       <Container>
@@ -24,7 +20,7 @@ export function Header() {
           <div className={'flex justify-between items-center'}>
             <NavMenu routes={config.header.routes} />
 
-              <ThemeButton />
+            <ThemeButton />
           </div>
         </Nav>
       </Container>

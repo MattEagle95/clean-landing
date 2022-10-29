@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes';
 import useTranslation from 'next-translate/useTranslation';
-import { Sun } from 'phosphor-react';
+import { Moon, Sun } from 'phosphor-react';
 import { forwardRef } from 'react';
 
 import { Button, ButtonProps } from './button';
@@ -24,7 +24,7 @@ export const ThemeButton = forwardRef((props: ButtonProps, ref: any) => {
       onClick={toggleTheme}
       {...props}
     >
-      <Sun />
+      {theme === 'light' ? <Moon /> : <Sun />}
     </Button>
   );
 });
