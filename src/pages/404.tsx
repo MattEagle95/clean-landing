@@ -30,7 +30,7 @@ export default function NotFound() {
       <Box className={'flex flex-col gap-2'}>
         <Heading className={'font-bold'}>{t('notFound:title')}</Heading>
 
-        <Text className={'text-neutral-600 dark:text-neutral-400'}>
+        <Text className={'text-neutral-500'}>
           {t('notFound:subTitle')}
         </Text>
       </Box>

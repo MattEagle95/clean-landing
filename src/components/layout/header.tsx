@@ -24,9 +24,7 @@ export function Header() {
           <div className={'flex justify-between items-center'}>
             <NavMenu routes={config.header.routes} />
 
-            <Tooltip title={t('common:toggleTheme')}>
               <ThemeButton />
-            </Tooltip>
           </div>
         </Nav>
       </Container>
