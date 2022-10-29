@@ -8,7 +8,7 @@ A simple landing page written with NextJS and TailwindCSS. 🛬
 
 ## 🎨 Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Example Light](./examples/example_light.png) ![Example Light](./examples/example_dark.png)
 
 ## ⭐ Features
 
