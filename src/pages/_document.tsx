@@ -20,7 +20,7 @@ export default class AppDocument extends Document {
         <Head />
         <body
           className={
-            'bg-white text-neutral-800 dark:bg-black dark:text-neutral-200'
+            'bg-light text-dark-800 dark:bg-dark dark:text-light-200'
           }
         >
           <Main />

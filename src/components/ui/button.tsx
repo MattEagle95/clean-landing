@@ -26,13 +26,13 @@ export const buttonClasses: any = {
   variants: {
     filled: {
       primary:
-        'bg-primary-500 hover:bg-primary-700 disabled:bg-primary-900 disabled:hover:bg-primary-900 active:bg-primary-600',
+        'bg-primary-500 text-dark-800 hover:bg-primary-700 disabled:bg-primary-900 disabled:hover:bg-primary-900 active:bg-primary-600',
       light:
-        'bg-light-500 hover:bg-light-700 disabled:bg-light-900 disabled:hover:bg-light-900 active:bg-light-600',
-      dark: 'bg-dark-500 hover:bg-dark-700 disabled:bg-dark-900 disabled:hover:bg-dark-900 active:bg-dark-600',
+        'bg-light-500 text-dark-800 hover:bg-light-700 disabled:bg-light-900 disabled:hover:bg-light-900 active:bg-light-600',
+      dark: 'bg-dark-500 text-light-200 hover:bg-dark-700 disabled:bg-dark-900 disabled:hover:bg-dark-900 active:bg-dark-600',
       adaptive:
-        'bg-dark-500 hover:bg-dark-700 disabled:bg-dark-900 disabled:hover:bg-dark-900 active:bg-dark-600' +
-        'dark:bg-light-500 dark:hover:bg-light-700 dark:disabled:bg-light-900 dark:disabled:hover:bg-light-900 dark:active:bg-light-600',
+        'bg-dark-500 text-light-200 hover:bg-dark-700 disabled:bg-dark-900 disabled:hover:bg-dark-900 active:bg-dark-600' +
+        ' dark:bg-light-500 dark:text-dark-800 dark:hover:bg-light-700 dark:disabled:bg-light-900 dark:disabled:hover:bg-light-900 dark:active:bg-light-600',
     },
     outlined: {
       primary:
@@ -42,7 +42,7 @@ export const buttonClasses: any = {
       dark: 'border-dark-500 hover:border-dark-700 disabled:border-dark-900 disabled:hover:border-dark-900 active:border-dark-600',
       adaptive:
         'border-dark-500 hover:border-dark-700 disabled:border-dark-900 disabled:hover:border-dark-900 active:border-dark-600' +
-        'dark:border-light-500 dark:hover:border-light-700 dark:disabled:border-light-900 dark:disabled:hover:border-light-900 dark:active:border-light-600',
+        ' dark:border-light-500 dark:hover:border-light-700 dark:disabled:border-light-900 dark:disabled:hover:border-light-900 dark:active:border-light-600',
     },
     transparent: {
       primary: 'bg-transparent border-transparent',

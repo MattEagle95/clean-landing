@@ -35,7 +35,7 @@ export default function NotFound() {
         </Text>
       </Box>
 
-      <LinkButton href={config.app.url}>{t('common:home')}</LinkButton>
+      <LinkButton href={config.app.url} color={'adaptive'}>{t('common:home')}</LinkButton>
     </Main>
   );
 }

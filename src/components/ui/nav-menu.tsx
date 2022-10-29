@@ -13,7 +13,7 @@ export const NavMenu = (props: NavMenuProps) => {
 
   const onClickHidden = async (route: Route) => {
     if (route.blank) {
-      window.open(route.href, '_ blank');
+      window.open(route.href, '_blank');
       return;
     }
 
