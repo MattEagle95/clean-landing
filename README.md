@@ -1,7 +1,6 @@
 # Landing Page
 
-A simple, customizable landing page written with NextJS and TailwindCSS. 🛬  
-Run with Docker, Docker-Compose or locally!
+A simple landing page written with NextJS and TailwindCSS. 🛬  
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/matteagle95/clean-landing/NodeJS%20CI)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/matteagle95/clean-landing)
@@ -15,10 +14,10 @@ Run with Docker, Docker-Compose or locally!
 
 - Clean Design
 - Light/Dark Mode
+- I18N
 - SEO optimized
 - 404 page
 - Plausible analytics
-- Customizable App-Name, Routes, etc.
 
 ## 🐳 Run with Docker
 
