@@ -20,13 +20,13 @@ A simple landing page written with NextJS and TailwindCSS. 🛬
 Build
 
 ```bash
-docker build . -t skrambl/landing-page:1.0.0
+docker build -t skrambl/landing-page:1.0.0 .
 ```
 
 Start
 
 ```bash
-docker run -d --restart=always -p 3000:3000 --name landing-page skrambl/landing-page:1.0.0
+docker run -p 3000:3000 skrambl/landing-page:1.0.0
 ```
 
 ## 🐳 Run with Docker-Compose

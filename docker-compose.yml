@@ -7,5 +7,27 @@ services:
     image: skrambl/landing-page:1.0.0
     build:
       context: .
+      args:
+        NODE_ENV: development
+        NEXT_PUBLIC_APP_NAME: App
+        NEXT_PUBLIC_APP_DESCRIPTION: Development
+        NEXT_PUBLIC_APP_URL: http://notes.amalotia.com
+        NEXT_PUBLIC_PLAUSIBLE_ENABLED: 1
+        NEXT_PUBLIC_PLAUSIBLE_TRACK_OUTBOUND_LINKS: 1
+        NEXT_PUBLIC_PLAUSIBLE_SELF_HOSTED: 1
+        NEXT_PUBLIC_PLAUSIBLE_CUSTOM_DOMAIN: http://analytics.amalotia.com
+        NEXT_PUBLIC_PLAUSIBLE_TRACK_LOCALHOST: 1
+#        NEXT_PUBLIC_BANNER_MESSAGE:
+#        NEXT_PUBLIC_HEADER_TITLE:
+#        NEXT_PUBLIC_HEADER_ROUTES:
+        NEXT_PUBLIC_FOOTER_TITLE: App
+        NEXT_PUBLIC_FOOTER_ROUTES: Contact;mailto:admin@example.com;1;1
     ports:
-      - "3000:3000"
+      - "5000:3000"
+    networks:
+      - landing-page-network
+
+networks:
+  landing-page-network:
+    name: main-network
+    driver: bridge
