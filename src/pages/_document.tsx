@@ -19,9 +19,7 @@ export default class AppDocument extends Document {
       <Html lang={locale} dir={'ltr'}>
         <Head />
         <body
-          className={
-            'bg-light text-dark-800 dark:bg-dark dark:text-light-200'
-          }
+          className={'bg-light text-dark-800 dark:bg-dark dark:text-light-200'}
         >
           <Main />
           <NextScript />

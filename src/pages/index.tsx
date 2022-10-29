@@ -9,9 +9,7 @@ export default function Home() {
       <Heading className={'font-bold'}>{config.app.name}</Heading>
 
       {config.app.description && (
-        <Text className={'text-neutral-500'}>
-          {config.app.description}
-        </Text>
+        <Text className={'text-neutral-500'}>{config.app.description}</Text>
       )}
     </Main>
   );

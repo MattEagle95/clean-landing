@@ -24,7 +24,7 @@ export function Header() {
           <div className={'flex justify-between items-center'}>
             <NavMenu routes={config.header.routes} />
 
-              <ThemeButton />
+            <ThemeButton />
           </div>
         </Nav>
       </Container>
