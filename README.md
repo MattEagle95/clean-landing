@@ -3,7 +3,9 @@
 A simple, customizable landing page written with NextJS and TailwindCSS. 🛬  
 Run with Docker, Docker-Compose or locally!
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/matteagle95/clean-landing/NodeJS%20CI)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/matteagle95/clean-landing)
+![GitHub](https://img.shields.io/github/license/matteagle95/clean-landing)
 
 ## 🎨 Screenshots
 
