@@ -34,13 +34,14 @@ const alertClasses: any = {
       primary: 'bg-primary-500  text-dark-800',
       light: 'bg-light-500  text-dark-800',
       dark: 'bg-dark-500  text-light-200',
-      adaptive: 'bg-light-500 text-dark-800 dark:bg-dark-500 dark:text-light-200'
+      adaptive:
+        'bg-light-500 text-dark-800 dark:bg-dark-500 dark:text-light-200',
     },
     outlined: {
       primary: 'border-primary-500',
       light: 'border-light-500',
       dark: 'border-dark-500',
-      adaptive: 'border-light-500 dark:border-dark-500'
+      adaptive: 'border-light-500 dark:border-dark-500',
     },
     transparent: {
       primary: 'bg-transparent border-transparent',

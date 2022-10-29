@@ -1,3 +1,4 @@
+import '../styles/globals.css';
 import '@fontsource/inter/variable.css';
 
 import PlausibleProvider from 'next-plausible';
@@ -8,9 +9,9 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { IconContext } from 'phosphor-react';
 import React from 'react';
+
 import { Layout } from '../components/layout/layout';
 import { config } from '../config/config';
-import '../styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   const { lang } = useTranslation();
@@ -23,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
       selfHosted={config.plausible.selfHosted}
       trackLocalhost={config.plausible.trackLocalhost}
     >
-      <ThemeProvider attribute='class' enableSystem>
+      <ThemeProvider attribute="class" enableSystem>
         <IconContext.Provider
           value={{
             size: 20,
