@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  landing-page:
+    container_name: landing-page
+    restart: always
+    image: skrambl/landing-page:1.0.0
+    build:
+      context: .
+    ports:
+      - "3000:3000"

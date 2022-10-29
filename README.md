@@ -6,10 +6,6 @@ A simple landing page written with NextJS and TailwindCSS. 🛬
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/matteagle95/clean-landing)
 ![GitHub](https://img.shields.io/github/license/matteagle95/clean-landing)
 
-## 🎨 Screenshots
-
-![Example Light](./examples/example_light.png?raw=true) ![Example Light](./examples/example_dark.png?raw=true)
-
 ## ⭐ Features
 
 - Clean Design
@@ -21,30 +17,22 @@ A simple landing page written with NextJS and TailwindCSS. 🛬
 
 ## 🐳 Run with Docker
 
-Install dependencies
+Build
 
 ```bash
-npm install
+docker build . -t skrambl/landing-page:1.0.0
 ```
 
-Start development server
+Start
 
 ```bash
-npm run dev
+docker run -d --restart=always -p 3000:3000 --name landing-page skrambl/landing-page:1.0.0
 ```
 
 ## 🐳 Run with Docker-Compose
 
-Install dependencies
-
 ```bash
-npm install
-```
-
-Start development server
-
-```bash
-npm run dev
+docker-compose up -d
 ```
 
 ## 💻 Run locally
@@ -63,7 +51,7 @@ npm run dev
 
 ## ⚙ Customization
 
-To run this project, you will need to add the environment variables of the `.env.example` file to your `.env` file.
+There are options for customization available in `.env.example`. To use environment variables while developing/building rename the file to `.env`.
 
 ## ℹ Licence
 
