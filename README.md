@@ -8,10 +8,7 @@ A simple landing page written with NextJS and TailwindCSS. 🛬
 
 ## 🎨 Screenshots
 
-<div align="center" width="100%">
-    <img src="./examples/example_light.png" width="128" alt="" />
-    <img src="./examples/example_dark.png" width="128" alt="" />
-</div>
+![Example Light](./examples/example_light.png?raw=true) ![Example Light](./examples/example_dark.png?raw=true)
 
 ## ⭐ Features
 
