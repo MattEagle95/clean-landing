@@ -17,9 +17,13 @@ export type Config = {
   banner: {
     message?: string;
   };
-  routes: {
-    header: Route[];
-    footer: Route[];
+  header: {
+    title?: string;
+    routes: Route[];
+  };
+  footer: {
+    title?: string;
+    routes: Route[];
   };
 };
 
@@ -39,11 +43,15 @@ export const config: Config = {
   banner: {
     message: process.env.NEXT_PUBLIC_BANNER_MESSAGE,
   },
-  routes: {
-    header: process.env.NEXT_PUBLIC_HEADER_ROUTES
+  header: {
+    title: process.env.NEXT_PUBLIC_HEADER_TITLE,
+    routes: process.env.NEXT_PUBLIC_HEADER_ROUTES
       ? converToRoutes(process.env.NEXT_PUBLIC_HEADER_ROUTES)
       : [],
-    footer: process.env.NEXT_PUBLIC_FOOTER_ROUTES
+  },
+  footer: {
+    title: process.env.NEXT_PUBLIC_FOOTER_TITLE,
+    routes: process.env.NEXT_PUBLIC_FOOTER_ROUTES
       ? converToRoutes(process.env.NEXT_PUBLIC_FOOTER_ROUTES)
       : [],
   },

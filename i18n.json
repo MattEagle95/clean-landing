@@ -4,5 +4,6 @@
   "pages": {
     "*": ["common"],
     "/404": ["notFound"]
-  }
+  },
+  "logBuild": false
 }

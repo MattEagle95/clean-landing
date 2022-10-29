@@ -8,5 +8,5 @@ const nextConfig = {
 };
 
 module.exports = withPlausibleProxy({
-  customDomain: 'http://analytics.amalotia.com',
+  customDomain: process.env.NEXT_PUBLIC_PLAUSIBLE_CUSTOM_DOMAIN,
 })(nextTranslate(nextConfig));

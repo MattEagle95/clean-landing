@@ -26,6 +26,7 @@ export default function NotFound() {
         title={t('notFound:title')}
         description={t('notFound:subTitle')}
       />
+
       <Box className={'flex flex-col gap-2'}>
         <Heading className={'font-bold'}>{t('notFound:title')}</Heading>
 
@@ -33,6 +34,7 @@ export default function NotFound() {
           {t('notFound:subTitle')}
         </Text>
       </Box>
+
       <LinkButton href={config.app.url}>{t('common:home')}</LinkButton>
     </Main>
   );
